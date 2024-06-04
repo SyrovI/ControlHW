@@ -1,4 +1,4 @@
-// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк, 
+﻿// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк, 
 // длина которых меньше, либо равна 3 символам. 
 // Первоначальный массив можно ввести с клавиатуры, 
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями,
@@ -11,7 +11,7 @@ string[] arr2 = new string[arr1.Length];
 void SecondArr(string[] arr1, string[] arr2)
 {
     int count = 0;
-    for (int i = 0; i < arr1.Lenght; i++)
+    for (int i = 0; i < arr1.Length; i++)
     {
         if (arr1[i].Length <= 3)
         {  
@@ -21,7 +21,7 @@ void SecondArr(string[] arr1, string[] arr2)
     }
 }
 
-void PrintArr(string[] array)
+void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -31,4 +31,4 @@ void PrintArr(string[] array)
 }
 
 SecondArr(arr1, arr2);
-PrintArr(arr2);
+PrintArray(arr2);
